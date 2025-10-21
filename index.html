@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>שערים - פותחים לך את השער לעולם הבינה המלאכותית</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --brand-blue: #0A67C4;
+        --brand-teal: #3DD1E7;
+        --brand-yellow: #F5B82E;
+        --brand-dark-blue: #03002D;
+      }
+      body {
+        font-family: 'Heebo', sans-serif;
+        background-color: #f8fafc;
+        background-image: 
+          radial-gradient(circle at 100% 0%, rgba(61, 209, 231, 0.1) 0%, transparent 30%),
+          radial-gradient(circle at 0% 100%, rgba(10, 103, 196, 0.1) 0%, transparent 30%);
+
+      }
+      .brand-gradient {
+        background-image: linear-gradient(to left, var(--brand-blue), var(--brand-teal));
+      }
+      .text-gradient {
+        background-image: linear-gradient(to left, var(--brand-blue), var(--brand-teal));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .hero-dots-pattern {
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(circle at 1px 1px, rgba(10, 103, 196, 0.15) 1px, transparent 0);
+        background-size: 2rem 2rem;
+        mask-image: linear-gradient(to bottom, white 0%, white 80%, transparent 100%);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.4"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-800">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  </body>
+</html>
